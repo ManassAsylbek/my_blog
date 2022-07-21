@@ -16,12 +16,12 @@ function App() {
                 <Header />
                 <div className="w3-row">
                     <div className="w3-col l8 s12">
-                        <BlogEntries blog={MyBlog.blog}/>
+                        <BlogEntries />
                     </div>
 
                     <div className="w3-col l4">
                         <AboutCard/>
-                        <Posts posts={MyBlog.posts}/>
+                        <Posts/>
                         <Tags/>
                     </div>
                 </div>
