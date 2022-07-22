@@ -10,7 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bfef40f-d1fc-4abe-8515-f8feb0d0325b" name="Default Changelist" comment="fi:my_blog_21_07" />
+    <list default="true" id="6bfef40f-d1fc-4abe-8515-f8feb0d0325b" name="Default Changelist" comment="add:create branch 21_07">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BlogEntries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlogEntries.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Constants/indexs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopularPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tags.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +77,8 @@
       <workItem from="1658284319418" duration="1255000" />
       <workItem from="1658285976321" duration="6526000" />
       <workItem from="1658373263769" duration="7525000" />
-      <workItem from="1658383886355" duration="653000" />
+      <workItem from="1658383886355" duration="1357000" />
+      <workItem from="1658458286326" duration="887000" />
     </task>
     <task id="LOCAL-00001" summary="add:map">
       <created>1658377452831</created>
@@ -107,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658384447277</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add:create branch 21_07">
+      <created>1658384629602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658384629602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,13 +144,14 @@
     <MESSAGE value="add:map" />
     <MESSAGE value="fi:my_blog_21_07" />
     <MESSAGE value="fix:21_07" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:21_07" />
+    <MESSAGE value="add:create branch 21_07" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:create branch 21_07" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="551" y="275" key="#ESLint" timestamp="1658383934748">
+    <state x="551" y="275" key="#ESLint" timestamp="1658459042259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="551" y="275" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1658383934748" />
+    <state x="551" y="275" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1658459042259" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1658201100548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -152,10 +168,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1658383562403" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1658384536038">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1658384637128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1658384536038" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1658384637128" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658383514219">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

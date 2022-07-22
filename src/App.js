@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import BlogEntries from "./components/BlogEntries";
 import AboutCard from "./components/AboutCard";
-import Posts from "./components/Posts";
+import PopularPosts from "./components/PopularPosts";
 import Tags from "./components/Tags";
 import Footer from "./components/Footer";
 
@@ -21,7 +21,7 @@ function App() {
 
                     <div className="w3-col l4">
                         <AboutCard/>
-                        <Posts/>
+                        <PopularPosts/>
                         <Tags/>
                     </div>
                 </div>

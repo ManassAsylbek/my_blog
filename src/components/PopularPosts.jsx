@@ -1,7 +1,7 @@
 import React from 'react';
-import {posts} from "./Constants/indexs";
+import {popularPosts} from "./Constants";
 
-const Posts = (props) => {
+const PopularPosts = (props) => {
     return (
         <div className="w3-card w3-margin">
             <div className="w3-container w3-padding">
@@ -9,7 +9,7 @@ const Posts = (props) => {
             </div>
             <ul className="w3-ul w3-hoverable w3-white">
                 {
-                   posts.map(post =>
+                    popularPosts.map(post =>
                         <li className="w3-padding-16">
                             <img src={post.img} alt="Image" className="w3-left w3-margin-right"
                                  style={{width: "50px"}}/>
@@ -24,4 +24,4 @@ const Posts = (props) => {
     );
 };
 
-export default Posts;
+export default PopularPosts;

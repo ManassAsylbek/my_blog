@@ -4,7 +4,7 @@ export const tags = [
 export const blog = [
         {img:'https://www.w3schools.com/w3images/woods.jpg',
          title:'TITLE HEADING',
-         data:'April 7, 2014',
+         date:'April 7, 2014',
          text:'Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat.' +
                 ' Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.' +
                 ' Praesent tincidunt sed' +
@@ -20,7 +20,7 @@ export const blog = [
                 ' diam non fringilla.',
          comments:2}
     ]
-export const posts = [
+export const popularPosts = [
         {img:'https://www.w3schools.com/w3images/workshop.jpg',title:'Lorem',text:'Sed mattis nunc'},
         {img:'https://www.w3schools.com/w3images/gondol.jpg',title:'Ipsum',text:'Praes tinci sed'},
         {img:'https://www.w3schools.com/w3images/skies.jpg',title:'Dorum',text:'Ultricies congue'},
