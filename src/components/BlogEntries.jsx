@@ -1,5 +1,5 @@
 import React from 'react';
-import {blog} from "./Constants/indexs";
+import {blog} from "../Constants/indexs";
 
 const BlogEntries = (props) => {
     return (

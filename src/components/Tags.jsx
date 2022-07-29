@@ -1,5 +1,5 @@
 import React from 'react';
-import {tags} from './Constants/indexs'
+import {tags} from '../Constants/indexs'
 
 const margin = {
     marginRight: "5px"

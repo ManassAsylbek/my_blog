@@ -1,5 +1,5 @@
 import React from 'react';
-import {posts} from "./Constants/indexs";
+import {posts} from "../Constants/indexs";
 
 const Posts = (props) => {
     return (
