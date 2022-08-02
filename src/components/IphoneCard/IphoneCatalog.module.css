@@ -1,0 +1,17 @@
+
+.iphones{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.iphone{
+    display: grid;
+    justify-items: center;
+    width: 250px;
+    margin:0  40px;
+
+}
+.iphone img{
+    width: 100%;
+}

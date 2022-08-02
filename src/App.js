@@ -6,10 +6,11 @@ import Main from "./pages/main/Main";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
 import Address from "./pages/Address/Address";
-import Products from "./pages/Products/Products";
 import NotFound from "./pages/NotFound/NotFound";
 import MacBook from "./components/MacBook/MacBook";
-import Iphone from "./components/Iphone/Iphone";
+import IphoneCatalog from "./components/IphoneCard/IphoneCatalog";
+import Product from "./pages/Product/Product";
+import Iphone from "./components/IphoneCard/Iphone/Iphone";
 
 
 function App() {
@@ -20,9 +21,10 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main text="Главная страница"/>}/>
                     <Route path="/about" element={<About text="О нас"/>}/>
-                    <Route path="/products" element={<Products/>}>
-                        <Route path="iphone" element={<Iphone/>}/>  {/*ДОЧЕРНИЙ РОУТ*/}
-                        <Route path="macbook" element={<MacBook/>}/>{/*ДОЧЕРНИЙ РОУТ*/}
+                    <Route path="/product/" element={<Product/>}>
+                        <Route path="iphone" element={<IphoneCatalog/>}/>  {/*ДОЧЕРНИЙ РОУТ*/}
+                        <Route path="iphone/:id" element={<Iphone/>}/>     {/*ДОЧЕРНИЙ РОУТ*/}
+                        <Route path="macbook" element={<MacBook/>}/>       {/*ДОЧЕРНИЙ РОУТ*/}
                     </Route>
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/address" element={<Address/>}/>
