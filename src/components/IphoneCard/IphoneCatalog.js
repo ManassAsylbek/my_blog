@@ -7,12 +7,13 @@ const IphoneCatalog = () => {
 
     return (
         <div className={style.iphones}>
-            {iphones.map(p => <div className={style.iphone}>
-                <NavLink to={`/product/iphone/${p.id}`}><img src={p.img} alt=""/></NavLink>
-                <h5>{p.name}</h5>
-                <span>{p.price}</span>
-                <NavLink to={`/product/iphone/${p.id}`}>выбрать</NavLink>
-            </div>)}
+            {iphones.map(p =>
+                <div className={style.iphone}>
+                    <NavLink to={`/product/iphone/${p.id}`}><img src={p.img} alt=""/></NavLink>
+                    <h5>{p.name}</h5>
+                    <span>{p.price}</span>
+                    <NavLink to={`/product/iphone/${p.id}`}>выбрать</NavLink>
+                </div>)}
         </div>
     );
 };

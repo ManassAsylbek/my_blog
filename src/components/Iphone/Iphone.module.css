@@ -1,0 +1,18 @@
+.iphone {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.iphone img {
+    width: 300px;
+}
+
+.quantityStatus {
+    display: inline;
+    border-radius: 30px;
+    background-color: red;
+    padding: 5px 10px;
+    color: white;
+}

@@ -10,28 +10,29 @@ import NotFound from "./pages/NotFound/NotFound";
 import MacBook from "./components/MacBook/MacBook";
 import IphoneCatalog from "./components/IphoneCard/IphoneCatalog";
 import Product from "./pages/Product/Product";
-import Iphone from "./components/IphoneCard/Iphone/Iphone";
+import Iphone from "./components/Iphone/Iphone";
+import Watch from "./components/Watch/Watch";
+import WatchCatalog from "./components/WatchCard/WatchCatalog";
 
 
 function App() {
     return (
-        <>
             <BrowserRouter>
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Main text="Главная страница"/>}/>
                     <Route path="/about" element={<About text="О нас"/>}/>
-                    <Route path="/product/" element={<Product/>}>
-                        <Route path="iphone" element={<IphoneCatalog/>}/>  {/*ДОЧЕРНИЙ РОУТ*/}
-                        <Route path="iphone/:id" element={<Iphone/>}/>     {/*ДОЧЕРНИЙ РОУТ*/}
-                        <Route path="macbook" element={<MacBook/>}/>       {/*ДОЧЕРНИЙ РОУТ*/}
-                    </Route>
+                    <Route path="/product/" element={<Product/>}/>
+                    <Route path="/product/macbook" element={<MacBook/>}/>
+                    <Route path="/product/iphone" element={<IphoneCatalog/>}/>
+                    <Route path="/product/iphone/:id" element={<Iphone/>}/>
+                    <Route path="/product/watch" element={<WatchCatalog/>}/>
+                    <Route path="/product/watch/:id" element={<Watch/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/address" element={<Address/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>
-        </>
     );
 }
 
