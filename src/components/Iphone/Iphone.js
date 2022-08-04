@@ -6,9 +6,8 @@ import style from './Iphone.module.css'
 const Iphone = () => {
     const params = useParams();
     const [searchParams,setSearchParams] = useSearchParams()
+
     const product = iphones.find(item => item.id === +params.id)
-
-
     return (
         <div className={style.iphone}>
             <div>
