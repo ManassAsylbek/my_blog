@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {useParams, useSearchParams} from "react-router-dom";
 import style from "../Iphone/Iphone.module.css";
-import {products} from "../../Constants/Products";
+import DateProductContext from "../../Context/Context";
 
-const Goods = () => {
+const Goods = (props) => {
     const params = useParams();
+
+    const {catalog, setCatalog} = useContext(DateProductContext)
+
     const [searchParams, setSearchParams] = useSearchParams()
-    const product = products[params.name].find(item => item.id === +params.id)
+
+    const product = catalog.find(item => item.id === +params.id)
     return (
         <div className={style.iphone}>
             <div>

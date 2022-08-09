@@ -1,17 +1,31 @@
-import React, {useContext} from 'react';
+import React, {useEffect, useState} from 'react';
+import toast from 'react-hot-toast'
 import {NavLink} from "react-router-dom";
 import style from "../Product/Products.module.css";
-import {products} from "../../Constants/Products"
 
-const Product = () => {
+const Product = (props) => {
+
+    const [catalog, setCatalog] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3001/goodsCatolog")
+            .then(response => {
+                if(response.status===200){
+                    return response.json()
+                } else {
+                    toast.error("Error. Status: "+ response.status)
+                }
+            })
+            .then(data => setCatalog(data))
+    },[])
 
     const setActive = (obj) => (obj.isActive ? `${style.active}` : "")
     return (
         <div className={style.container}>
             <ul>
-                {products.goodsCatolog.map(item =>
-                    <li>
-                        <NavLink className={setActive} to={`/product/${item.name}`}>
+                {catalog.map(item =>
+                    <li key={item.id}>
+                        <NavLink className={setActive}  to={`/product/${item.name}`}>
                             <img src={item.img} alt=""/>
                             <span>{item.name}</span>
                         </NavLink>
