@@ -1,29 +1,63 @@
 import React, {useState} from 'react';
 import s from './Products.module.css'
+import {toast} from "react-hot-toast";
 
 const Products = () => {
-    const [name,setName] = useState(null)
-    const [imgUrl,setImgUrl] = useState(null)
-    const [price,setPrice] = useState(null)
-    const [desc,setDesc] = useState(null)
-    const [category,setcategory] = useState(null)
+    const [name, setName] = useState(null)
+    const [imgUrl, setImgUrl] = useState(null)
+    const [price, setPrice] = useState(null)
+    const [desc, setDesc] = useState(null)
+    const [category, setcategory] = useState(null)
 
-    const getValue= (e) =>{
-        if(e.currentTarget.id==="name"){
+    const getValue = (e) => {
+        if (e.currentTarget.id === "name") {
             setName(e.currentTarget.value)
-        }if(e.currentTarget.id==="imgUrl"){
+        }
+        if (e.currentTarget.id === "imgUrl") {
             setImgUrl(e.currentTarget.value)
-        }if(e.currentTarget.id==="price"){
-            setPrice(e.currentTarget.value)
-        }if(e.currentTarget.id==="desc"){
+        }
+        if (e.currentTarget.id === "price") {
+            setPrice(e.currentTarget.value+" сом")
+        }
+        if (e.currentTarget.id === "desc") {
             setDesc(e.currentTarget.value)
-        }if(e.currentTarget.id==="category"){
+        }
+        if (e.currentTarget.id === "category") {
             setcategory(e.currentTarget.value)
         }
     }
 
-    const saveData = () =>{
-        console.log("work")
+    const saveData = () => {
+        const data = {
+            price,
+            name,
+            img: imgUrl,
+            description: desc,
+        }
+
+        let url = ""
+
+        if (category === "1") {
+            url = "http://localhost:3002/iphones"
+        }
+        if (category === "2") {
+            url = "http://localhost:3002/watchs"
+        }
+        const option = {
+            method: "POST",
+            headers: {
+                "content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }
+        fetch(url, option)
+            .then(response =>{
+                if(response.ok===true){
+                    toast.success("Товар успешно добавлен")
+                }else {
+                    toast.error("Что=то произошло Cтатус ошибки:" + response.status)
+                }
+            })
     }
 
     return (
@@ -40,7 +74,7 @@ const Products = () => {
                 </div>
                 <div>
                     <label htmlFor="price">цена</label>
-                    <input type="number" id="price" onChange={getValue} />
+                    <input type="number" id="price" onChange={getValue}/>
                 </div>
                 <div>
                     <label htmlFor="desc">Описания</label>

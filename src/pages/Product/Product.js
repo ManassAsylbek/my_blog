@@ -8,7 +8,7 @@ const Product = (props) => {
     const [catalog, setCatalog] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3001/goodsCatolog")
+        fetch("http://localhost:3002/goodsCatolog")
             .then(response => {
                 if(response.status===200){
                     return response.json()

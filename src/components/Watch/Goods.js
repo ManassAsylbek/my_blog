@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {useParams, useSearchParams} from "react-router-dom";
-import style from "../Iphone/Iphone.module.css";
+import style from "../../pages/Admin/IphoneAdmin/Iphone.module.css";
 import DateProductContext from "../../Context/Context";
 
 const Goods = (props) => {

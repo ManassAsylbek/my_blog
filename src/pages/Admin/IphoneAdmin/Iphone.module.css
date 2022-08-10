@@ -1,12 +1,16 @@
 .iphone {
-    width: 600px;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
-
+.iphone table{
+    width: 100%;
+    border: 1px solid gray;
+}
 .iphone img {
-    width: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 .quantityStatus {

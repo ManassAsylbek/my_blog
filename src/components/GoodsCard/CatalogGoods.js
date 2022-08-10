@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext} from 'react';
-import toast from 'react-hot-toast'
+import {toast} from 'react-hot-toast'
 import style from "./CatalogGoods.module.css"
 import {NavLink, useParams} from "react-router-dom";
 import DateProductContext from "../../Context/Context";
@@ -11,7 +11,7 @@ const CatalogGoods = (props) => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3001/${params.name}`)
+        fetch(`http://localhost:3002/${params.name}`)
             .then(response => {
                 if (response.status === 200) {
                     return response.json()
@@ -19,7 +19,7 @@ const CatalogGoods = (props) => {
                     toast.error("Error. Status: "+ response.status)
                 }
             })
-            .then(data => setCatalog(data) && props.dateGoods(data))
+            .then(data => setCatalog(data))
     }, [])
 
 

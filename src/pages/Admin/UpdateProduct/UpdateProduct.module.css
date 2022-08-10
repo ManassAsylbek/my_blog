@@ -1,0 +1,11 @@
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.classForm div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
