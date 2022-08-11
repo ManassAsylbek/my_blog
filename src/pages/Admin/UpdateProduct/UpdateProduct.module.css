@@ -3,9 +3,12 @@
     margin: 0 auto;
 }
 
-.classForm div{
+.classForm div {
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    font-size:18px ;
+}
+.classForm button{
+    margin-top:10px;
 }

@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import s from './Products.module.css'
+import s from './AddProducts.module.css'
 import {toast} from "react-hot-toast";
 
-const Products = () => {
+const AddProducts = () => {
     const [name, setName] = useState(null)
     const [imgUrl, setImgUrl] = useState(null)
     const [price, setPrice] = useState(null)
     const [desc, setDesc] = useState(null)
-    const [category, setcategory] = useState(null)
+    const [category, setCategory] = useState(null)
 
     const getValue = (e) => {
         if (e.currentTarget.id === "name") {
@@ -23,7 +23,7 @@ const Products = () => {
             setDesc(e.currentTarget.value)
         }
         if (e.currentTarget.id === "category") {
-            setcategory(e.currentTarget.value)
+            setCategory(e.currentTarget.value)
         }
     }
 
@@ -33,6 +33,8 @@ const Products = () => {
             name,
             img: imgUrl,
             description: desc,
+            catalogName:category,
+
         }
 
         let url = ""
@@ -84,7 +86,7 @@ const Products = () => {
                     <label htmlFor="category">Категория</label>
                     <select id="category" onChange={getValue}>
                         <option value="0">выберите</option>
-                        <option value="1">iphone</option>
+                        <option value="1">iphones</option>
                         <option value="2">watches</option>
                     </select>
                 </div>
@@ -97,4 +99,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default AddProducts;

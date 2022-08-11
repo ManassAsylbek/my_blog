@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Product from "./pages/Product/Product";
 import Goods from "./components/Watch/Goods";
 import CatalogGoods from "./components/GoodsCard/CatalogGoods";
-import Products from "./pages/Admin/Product/Products";
+import AddProducts from "./pages/Admin/AddProduct/AddProducts";
 import Iphone from "./pages/Admin/IphoneAdmin/Iphone";
 import UpdateProduct from "./pages/Admin/UpdateProduct/UpdateProduct";
 
@@ -33,7 +33,7 @@ function App() {
                     <Route path="/product/:name/:id" element={<Goods  dateAll={dateAll}/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/address" element={<Address/>}/>
-                    <Route path="/admin/add-products" element={<Products/>}/>
+                    <Route path="/admin/add-products" element={<AddProducts/>}/>
                     <Route path="/admin/iphone" element={<Iphone/>}/>
                     <Route path="/admin/update-product/:id" element={<UpdateProduct/>}/>
                     <Route path="*" element={<NotFound/>}/>
